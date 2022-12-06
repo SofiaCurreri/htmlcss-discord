@@ -10,6 +10,10 @@
 	background-color: lightblue;*/
 }
 
+h1{
+	font-size: 2em;
+}
+
 .header-nav {
 	display: flex;
 	flex-grow: 1;
@@ -61,6 +65,12 @@ label{
 	margin-left: 25px ;
 }
 
+.lb-lightblue{
+	background-color: rgb(171, 183, 255);
+	color: white;
+	margin-top: 10px;
+}
+
 /* JUMBOTRON */
 
 .jumbotron {
@@ -99,8 +109,8 @@ main>section {
 main>section>.container {
 	display: flex;
 	flex-direction: row;
-	/* debug */
-	min-height: 500px;
+	/* debug 
+	min-height: 500px;*/
 }
 
 .bg-white {
@@ -108,20 +118,27 @@ main>section>.container {
 }
 
 .bg-gray {
-	background-color: lightgray;
+	background-color: rgb(236, 234, 234);
 }
 
 .main-col {
 	flex-grow: 2;
 	width: 50%;
+	margin-top: 0;
 	/* debug 
 	background-color: cornflowerblue;
 	border: 2px dashed black;*/
 }
 
 .side-col {
+	display: flex;
 	flex-grow: 1;
+	flex-direction: column;
+	gap: 40px;
+	padding-left: 160px;
+	padding-right: 200px;
 	width: 50%;
+	padding-top: 30px;
 	/* debug
 	background-color: pink;
 	border: 2px dashed black;*/
@@ -129,11 +146,11 @@ main>section>.container {
 
 .hilighted-content {
 	flex-grow: 1;
-
-	/* debug */
+	text-align: center;
+	/* debug 
 	min-height: 800px;
 	background-color: forestgreen;
-	border: 2px dashed black;
+	border: 2px dashed black;*/
 }
 
 /* FOOTER */
