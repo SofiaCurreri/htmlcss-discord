@@ -203,9 +203,14 @@ footer{
 	background-color: #20b2aa;
 	border: 2px dashed black;*/
 }
-
+.icona-parent{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
 .footer-col {
 	width: 25%;
+	line-height: 30px;
 	/* debug 
 	background-color: #20b2aa;
 	border: 2px dashed white;*/
