@@ -5,9 +5,9 @@
 	align-items: center;
 	min-height: 80px;
 	padding: 10px 0;
-
-	/* debug */
-	background-color: lightblue;
+	background-color: rgb(37, 94, 233);
+	/* debug 
+	background-color: lightblue;*/
 }
 
 .header-nav {
@@ -20,9 +20,9 @@
 	flex-basis: 20%;
 	padding: 5px 10px;
 
-	/* debug */
+	/* debug 
 	background-color: goldenrod;
-	border: 2px dashed black;
+	border: 2px dashed black;*/
 }
 
 .header-links {
@@ -30,8 +30,35 @@
 	text-align: center;
 }
 
+.header-links *{
+	margin-left: 30px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 .header-login {
 	text-align: right;
+}
+
+label{
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.lb-white{
+	border-color: white;
+	background-color: white;
+	color: black;
+}
+
+.lb-black{
+	border-color: black;
+	background-color: black;
+	margin-left: 25px ;
 }
 
 /* JUMBOTRON */
@@ -40,19 +67,27 @@
 	padding: 50px 0;
 	display: flex;
 	justify-content: center;
-
-
-	/* debug */
-	background-color: darkblue;
+	background-image: url('../img/jumbo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* debug
+	background-color: darkblue;*/
 }
 
 .jumbotron .content {
 	min-height: 400px;
 	width: 50%;
-
-	/* debug */
+	color: white;
+	text-align: center;
+	
+	/* debug 
 	background-color: #ee82ee;
-	border: 2px dashed black;
+	border: 2px dashed black;*/
+}
+
+.margine{
+	margin: 40px;
 }
 
 /* MAIN & SECTIONS */
@@ -63,7 +98,7 @@ main>section {
 
 main>section>.container {
 	display: flex;
-
+	flex-direction: row;
 	/* debug */
 	min-height: 500px;
 }
@@ -78,18 +113,18 @@ main>section>.container {
 
 .main-col {
 	flex-grow: 2;
-
-	/* debug */
+	width: 50%;
+	/* debug 
 	background-color: cornflowerblue;
-	border: 2px dashed black;
+	border: 2px dashed black;*/
 }
 
 .side-col {
 	flex-grow: 1;
-
-	/* debug */
+	width: 50%;
+	/* debug
 	background-color: pink;
-	border: 2px dashed black;
+	border: 2px dashed black;*/
 }
 
 .hilighted-content {
